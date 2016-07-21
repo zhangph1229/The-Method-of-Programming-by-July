@@ -7,7 +7,7 @@ package cn.edu.neu.zhangph.ch2;
 public class ClimbStairs {
 	public static void main(String[] args) {
 		System.out.println(fibonacci(5));
-		System.out.println(climbStairs(5));
+		System.out.println(climbStairs(12));
 	}
 	/**
 	 * 只能跳一个或者跳两个的情况
