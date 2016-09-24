@@ -14,15 +14,16 @@ public class AllPermutation {
 			System.out.println();
 		}else {
 			for (int i = from; i <= to ; i++) {
-				char tmp = perm[i];
-				perm[i] = perm[from];
-				perm[from] = tmp;
+				swap(perm, i, from);
 				allPermutation_recursion(perm, from + 1, to);
-				tmp = perm[i];
-				perm[i] = perm[from];
-				perm[from] = tmp;
+				swap(perm, i, from);
 			}
 		}
+	}
+	private static void swap(char[] perm, int i, int j){
+		char tmp = perm[i];
+		perm[i] = perm[j];
+		perm[j] = tmp;
 	}
 	public static void allPermutation_dictionary(char[] perm, int num){
 		
